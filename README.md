@@ -1,4 +1,4 @@
-# Hola Docker with Spring Boot
+# Hola Docker with Spring Boot & Datadog
 
 This project shows you how to dockerize a Spring Boot application using a single `Dockerfile` or combining it with `docker-compose`.
 
