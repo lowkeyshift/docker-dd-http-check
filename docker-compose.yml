@@ -1,0 +1,24 @@
+version: '2.2'
+services:
+  hola:
+    build:
+      context: ./
+      dockerfile: Dockerfile-build
+    ports:
+      - 8080
+    scale: 3
+  # Agent container
+  datadog:
+    build:
+      context: ./
+      dockerfile: Dockerfile-dd
+    image: datadog:mydog
+    links:
+     - hola
+    environment:
+     - DD_API_KEY=1ed1eba742b84b49409e3a8e2885a779
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+     - /proc/mounts:/host/proc/mounts:ro
+     - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+
