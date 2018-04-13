@@ -5,7 +5,7 @@ This project shows you how to dockerize a Spring Boot application using a single
 The guide to build the code and understand the different concepts is located at [https://thepracticaldeveloper.com/2017/12/11/dockerize-spring-boot/](https://thepracticaldeveloper.com/2017/12/11/dockerize-spring-boot/).
 
 ## Datadog Enabled
-This containerized Java Spring Boot deployment is using [Datadog's](https://docs.datadoghq.com/agent/basic_agent_usage/docker/) v.6.1.2 of their Docker agent image. This is an example of how to configure the HTTP_CHECK integration while using our [Docker agent's autodiscovery[(https://docs.datadoghq.com/agent/autodiscovery/#how-it-works) feature.
+This containerized Java Spring Boot deployment is using [Datadog's](https://docs.datadoghq.com/agent/basic_agent_usage/docker/) v.6.1.2 of their Docker agent image. This is an example of how to configure the HTTP_CHECK integration while using our [Docker agent's autodiscovery](https://docs.datadoghq.com/agent/autodiscovery/#how-it-works) feature.
 
 *Some key things to change:*
 
