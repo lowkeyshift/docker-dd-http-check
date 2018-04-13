@@ -1,3 +1,0 @@
-FROM datadog/agent:latest
-COPY ./conf.d/conf.yaml /etc/datadog-agent/conf.d/http_check.d/ 
-
