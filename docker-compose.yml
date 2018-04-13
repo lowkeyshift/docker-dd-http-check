@@ -9,10 +9,7 @@ services:
     scale: 3
   # Agent container
   datadog:
-    build:
-      context: ./
-      dockerfile: Dockerfile-dd
-    image: datadog:mydog
+    image: datadog/agent:latest
     links:
      - hola
     environment:

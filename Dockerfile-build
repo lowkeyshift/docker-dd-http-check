@@ -1,6 +1,6 @@
 FROM maven:3.5.2-alpine
 LABEL "com.datadoghq.ad.check_names"='["http_check"]'
-# LABEL "com.datadoghq.ad.check.id"='["hola"]'
+# LABEL "com.datadoghq.ad.check.id"='["hola"]'  ## Alternate Container Identifier https://docs.datadoghq.com/agent/autodiscovery/#alternate-container-identifier-labels
 LABEL "com.datadoghq.ad.init_configs"='[{}]'
 LABEL "com.datadoghq.ad.instances"='[{"name": "hola", "url": "http://%%host%%:8080"}]'
 
